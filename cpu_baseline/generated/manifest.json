@@ -1,0 +1,81 @@
+{
+  "model": {
+    "path": "model_3/KERAS_check_best_model.h5",
+    "sha256": "dd2606c44710fda41a1d9430239b4004adbea90270b9a4134b330fee92367b39",
+    "architecture": [
+      16,
+      64,
+      32,
+      32,
+      5
+    ],
+    "parameter_count": 4389,
+    "weight_quantization": "QKeras quantized_bits(6, 0, alpha=1)",
+    "activation_quantization": "QKeras quantized_relu(6), step=1/64, range=[0, 63/64]",
+    "execution_arithmetic": "float32 with exported 6-bit parameter values and emulated 6-bit activations",
+    "softmax": "stable float32 softmax included"
+  },
+  "test_set": {
+    "samples": 166000,
+    "input_shape": [
+      166000,
+      16
+    ],
+    "output_shape": [
+      166000,
+      5
+    ]
+  },
+  "layers": {
+    "fc1": {
+      "input_size": 16,
+      "output_size": 64,
+      "dense_weights": 1024,
+      "nonzero_quantized_weights": 243,
+      "sparsity": 0.7626953125
+    },
+    "fc2": {
+      "input_size": 64,
+      "output_size": 32,
+      "dense_weights": 2048,
+      "nonzero_quantized_weights": 438,
+      "sparsity": 0.7861328125
+    },
+    "fc3": {
+      "input_size": 32,
+      "output_size": 32,
+      "dense_weights": 1024,
+      "nonzero_quantized_weights": 242,
+      "sparsity": 0.763671875
+    },
+    "output": {
+      "input_size": 32,
+      "output_size": 5,
+      "dense_weights": 160,
+      "nonzero_quantized_weights": 40,
+      "sparsity": 0.75
+    }
+  },
+  "artifacts": {
+    "X_test_f32.bin": {
+      "bytes": 10624000,
+      "sha256": "9496a4d654829dde9431b40484ef826e4404501589204260447d938992f53dcc"
+    },
+    "y_test_labels_u8.bin": {
+      "bytes": 166000,
+      "sha256": "9898fe1cef05b2ee25c8201e03f1f3a969a06b146e931fce5432e420b87e0959"
+    },
+    "qkeras_reference_scores_f32.bin": {
+      "bytes": 3320000,
+      "sha256": "183f8f0f6f65e6fdaa15c3c1432f53bd3bc82c129c2f402231078cad3eb37c90"
+    },
+    "qkeras_reference_labels_u8.bin": {
+      "bytes": 166000,
+      "sha256": "961ca6dfe7e0f963d98d0743b7213201235dd737363c687f62a9c36968f0d18f"
+    },
+    "model_data.h": {
+      "bytes": 32148,
+      "sha256": "89aaa8e90a9d765eb889505339774fccfe33774312272aff57349685f262b0c5"
+    }
+  }
+}
