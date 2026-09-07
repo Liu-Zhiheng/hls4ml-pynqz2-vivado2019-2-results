@@ -1,0 +1,15 @@
+measurement_date=2026-08-22
+operating_system=Ubuntu 22.04.5 LTS (Jammy Jellyfish)
+kernel=Linux 6.8.0-136-generic x86_64
+processor=AMD Ryzen 5 5600 6-Core Processor
+physical_cores=6
+hardware_threads=12
+benchmark_affinity=CPU 0
+frequency_driver=acpi-cpufreq
+frequency_governor=schedutil
+frequency_boost=enabled
+compiler=gcc 11.4.0
+perf_version=6.8.12
+energy_event=power/energy-pkg/
+energy_unit=Joules
+energy_event_scale=2.3283064365386962890625e-10

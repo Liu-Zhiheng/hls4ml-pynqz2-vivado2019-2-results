@@ -1,0 +1,25 @@
+{
+  "platform": "PYNQ-Z2 programmable logic",
+  "measurement": "batch-one tutorial Python driver plus AXI DMA",
+  "cpu_affinity": [
+    0
+  ],
+  "warmup_inferences": 200,
+  "measured_inferences": 5000,
+  "accuracy_subset": 0.7652,
+  "transfer_only_us": {
+    "mean": 954.3279896,
+    "median": 946.8775,
+    "p95": 1000.87765,
+    "p99": 1059.3786300000002,
+    "minimum": 934.893,
+    "maximum": 1558.459
+  },
+  "classification_end_to_end_us": {
+    "mean": 1330.1639288000001,
+    "median": 1319.723,
+    "p95": 1381.91495,
+    "p99": 1456.1244100000001
+  },
+  "class_agreement_with_streaming_run": 1.0
+}
