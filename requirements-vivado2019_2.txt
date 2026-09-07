@@ -1,0 +1,16 @@
+# Tested with Python 3.10.16 and Xilinx Vivado/Vivado HLS 2019.2.
+# These are the direct Python dependencies used by the executed notebook copies.
+hls4ml==1.2.0
+tensorflow==2.14.0
+QKeras==0.9.0
+tensorflow-model-optimization==0.7.5
+numpy==1.26.4
+scikit-learn==1.2.2
+matplotlib==3.7.5
+pandas==2.0.3
+liac-arff==2.5.0
+pydot==1.4.2
+graphviz==0.21
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.3.0
